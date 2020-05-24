@@ -11,11 +11,60 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
+const quotes = [
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+  {
+    quote: ``,
+    source: ``,
+    citation: ``,
+    year: ``,
+    tags: [],
+  },
+];
 
+const backgroundColors = [`Red`, `Green`, `Blue`];
 
 /***
  * `getRandomQuote` function
 ***/
+
+const getRandomQuote = () => {
+
+};
 
 
 
@@ -23,6 +72,9 @@ project 1 - A Random Quote Generator
  * `printQuote` function
 ***/
 
+const printQuote = () => {
+
+};
 
 
 /***
