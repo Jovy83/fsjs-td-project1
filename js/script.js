@@ -82,11 +82,12 @@ const getRandomBackgroundColor = (colorsArray) => {
 ***/
 
 const printQuote = () => {
-
+  // get random background color and apply it to the body element
   const color = getRandomBackgroundColor(backgroundColors);
   const bodyElement = document.querySelector(`body`);
   bodyElement.style.backgroundColor = color;
 
+  // get a random quote from our quotes array
   const quote = getRandomQuote(quotes);
   console.log(`Quote: ${quote.quote}`);
 
@@ -101,15 +102,17 @@ const printQuote = () => {
   // <p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
   // <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p>
 
-
+  // if there's a citation, append it to content
   if (quote.citation !== ``) {
     content += `<span class="citation">${quote.citation}</span>`;
   }
 
+  // if there's a year, append it to content
   if (quote.year !== ``) {
     content += `<span class="year">${quote.year}</span>`;
   }
 
+  // if there are tags, append it to content
   if (quote.tags.length > 0) {
 
     content += `<span class="tag">[`;
@@ -129,6 +132,7 @@ const printQuote = () => {
     content += `]</span>`;
   }
 
+  // don't forget closing tag
   content += `</p>`;
   
   quoteBoxDiv.innerHTML = content;
